@@ -1,0 +1,205 @@
+/* Základní styly */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+p {
+  text-align: center;
+}
+/* Dark mode */
+body.dark-mode {
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+/* Tlačítko pro přepínání módů */
+#toggle-dark-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Menu */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+header nav {
+  background-color: #8f2701;
+  padding: 15px;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sekce 1 - Obrázky */
+.images-section {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+.images-section .image-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.images-section img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s;
+}
+.images-section img:hover {
+  transform: scale(1.1);
+}
+/* Kontejner odkazů */
+.links-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Odkazy */
+.links-container a {
+  display: block;
+  margin: 5px 0;
+  color: #007bff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+/* Hover efekt */
+.links-container a:hover {
+  color: #4ef50d;
+  text-decoration: underline;
+}
+
+/* Sekce 2 - Formulář */
+#section2 {
+  padding: 20px;
+}
+h2 {
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+label,
+input,
+button {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+#password-message {
+  color: red;
+  font-size: 0.9em;
+  display: none;
+}
+/* Styl pro zprávy */
+#message-box {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  display: none;
+}
+
+#message-box.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+#message-box.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #8f2701;
+  color: white;
+}
+/* Styl e-mailového odkazu ve footeru */
+#email-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+/* Hover efekt pro e-mailový odkaz */
+#email-link:hover {
+  color: #4ef50d;
+}
+
+/* Ikona zpět nahoru */
+/* Styl pro ikonu zpět nahoru */
+#back-to-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+}
+b {
+  font-size: x-large;
+}
+
+/* Hover efekt pro lepší vizuální odezvu */
+#back-to-top:hover {
+  background-color: #4ef50d;
+}
+
+/* Responsivní styly */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+  }
+  .images-section .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    width: 100%;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav li {
+    margin: 5px 0;
+  }
+  .images-section {
+    margin-top: 100px;
+  }
+}

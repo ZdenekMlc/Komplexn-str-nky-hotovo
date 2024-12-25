@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taste Of Asia s.r.o.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Tlačítko pro přepínání mezi dark a light mód -->
+    <button id="toggle-dark-mode">🌗 Přepnout mód</button>
+
+    <!-- Header s responzivním menu -->
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="#section1">Galerie</a></li>
+          <li><a href="#section2">Registrace</a></li>
+          <li><a href="#footer">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sekce 1 s obrázky -->
+    <section class="images-section">
+      <h2>Galerie obrázků</h2>
+      <div id="section1" class="image-container">
+        <img
+          src="./pictures/chana-pulao-280-g.webp"
+          alt="Obrázek chana pulao"
+        />
+        <img
+          src="./pictures/kimchi-pikantni-1-kg.webp"
+          alt="Obrázek kimchi pikantní"
+        />
+        <img
+          src="./pictures/ustricova-omacka-4-5-l.webp"
+          alt="Obrázek ústřicová omáčka"
+        />
+      </div>
+      <h1>Taste of Asia - Potraviny pro asijskou kuchyni!</h1>
+      <p>
+        Náš obchod se zabývá prodejem produktů používaných v asijské kuchyni. V
+        nabídce máme také velká balení pro profesionální kuchyně a restaurace.
+        Položky s blížící se expirací nebo po expiraci můžete zakoupit s
+        výraznou slevou. Pro věrné zákazníky máme připraveny automatické VIP
+        ceníky, věrnostní body za každý nákup a speciální kupónové akce. Zboží
+        objednané v pracovní den dopoledne expedujeme ještě tentýž den.
+        Objednávky z odpoledních hodin, svátků či o víkendu expedujeme
+        následující pracovní den. U objednávek v celkové hodnotě nákupu nad 2000
+        Kč neplatíte za dopravu. Pokud potřebujete poradit s nákupem, skladovou
+        dostupností, platbou či dopravou - neváhejte nás kontaktovat, rádi Vám
+        poradíme. Hovoříme česky, anglicky, slovensky a cebuano.
+      </p>
+      <hr />
+      <h2>Kde všude nás najdete?</h2>
+      <div class="links-container">
+        <a href="https://www.tasteofasia.cz/" target="_blank"
+          >Taste of Asia CZ</a
+        >
+        <a href="https://www.tasteofasia.sk/" target="_blank"
+          >Taste of Asia SK</a
+        >
+        <a href="https://www.asianfoodshop.eu/" target="_blank"
+          >Asian Food Shop EU</a
+        >
+        <a href="https://www.geschmackvonasien.de/" target="_blank"
+          >Geschmack von Asien DE</a
+        >
+      </div>
+      <hr />
+    </section>
+
+    <!-- Sekce 2 s formulářem -->
+    <section id="section2">
+      <h2>Registrace</h2>
+      <p>Věrnost se u nás vyplácí!</p>
+
+      <p>Registrovaní zákazníci můžou těžit z několika benefitů.</p>
+
+      <p>
+        1/ Věrnostní systém bodů. Dle výše nákupu obdržíte věrnostní body se
+        kterými je možné uhradit příští nákupy až do výše 20% z objednávky.
+      </p>
+
+      <p>
+        2/ Výhodnější ceníky. Automatické přiřazení výhodnějších cen na základě
+        nákupu u nás. Systém zohledňuje obrat za posledních 365 dní na základě
+        kterého registrovaným zákazníkům přiřadí VIP ceníky.
+      </p>
+
+      <p>
+        3/ Speciální akce. Z těchto akcí mohou většinou těžit pouze zákazníci
+        kteří mají povoleny novinky na email. Slevové akce formou kupónů k
+        různým výročím, svátkům a speciálním obchodním akcím.
+      </p>
+      <h2>Registrujte se hned teď a máte jistotu že vám žádná akce neuteče!</h2>
+      <form id="registration-form">
+        <label for="username">Přezdívka:</label>
+        <input type="text" id="username" required />
+
+        <label for="password1">Heslo:</label>
+        <input type="password" id="password1" required />
+
+        <label for="password2">Potvrzení hesla:</label>
+        <input type="password" id="password2" required />
+
+        <button type="submit">Registrovat se</button>
+      </form>
+      <div id="message-box" class="hidden"></div>
+      <!-- Okénko pro zprávy -->
+    </section>
+
+    <!-- Footer s ikonou zpět nahoru -->
+    <footer id="footer">
+      <p>&copy; 2024 Taste Of Asia s.r.o.</p>
+      <p>
+        Kontaktujte nás:
+        <a href="mailto:info@tasteofasia.cz" id="email-link"
+          >info@tasteofasia.cz</a
+        >
+      </p>
+    </footer>
+    <button id="back-to-top" class="hidden"><b>⬆</b></button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
